@@ -195,7 +195,7 @@ data: () => ({
   callConnected : false,
   isOnHold : false,
   callSession: null,
-  sociomile: null
+  softphone: null
 })
 ```
 <!-- panels:end -->
@@ -204,7 +204,7 @@ data: () => ({
 ### Initialize SDK instance
 
 <!-- div:left-panel -->
-add Instance `new VoiceSDK.Init` to state variable `sociomile` you can use any name you want
+add Instance `new VoiceSDK.Init` to state variable `softphone` you can use any name you want
 - base_url: `String`
 - secret_key: `String`
 <!-- div:right-panel -->
