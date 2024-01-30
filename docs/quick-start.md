@@ -1,6 +1,6 @@
 ## SDK Library
 
-you need ask first for requesting SDK library to Ivosights for `VoiceSDK-1.0.0.min.js`
+you need ask first for requesting SDK library `VoiceSDK-1.0.0.min.js`
 
 ```html
   <script src='./VoiceSDK-1.0.0.min.js'></script>
