@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sociomile Voice SDK</title>
+    <title>Softphone SDK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css" integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark mb-2">
       <div class="container">
-        <a class="navbar-brand" href="#">Sociomile Voice SDK</a>
+        <a class="navbar-brand" href="#">Softphone SDK</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -74,16 +74,16 @@
         <pre>
 <code class="language-javascript">
 // Initial Configuration
-const socio = new VoiceSDK.Init({
+const softphone = new VoiceSDK.Init({
   base_url:'endpoint',
   secret_key:'secret_key'
 });
 // Start listen event
-socio.on('softphoneEvent', (event) => {
+softphone.on('softphoneEvent', (event) => {
   // event => []
 });
-// run sociomile
-socio.start();
+// run softphone
+softphone.start();
 </code>
       </pre>
               </div>
@@ -104,7 +104,7 @@ socio.start();
 // will create session call
 // save session into variable / state 
 // for hangup a call 
-const callSession = socio.dial('phoneNumber')
+const callSession = softphone.dial('phoneNumber')
   if(callSession){
       callSession.connection.addEventListener('track', (e) => {
           // element audio can use any format
@@ -131,10 +131,10 @@ const callSession = socio.dial('phoneNumber')
       <pre>
 <code class="language-javascript">
 // HANGUP
-// this function require sociomile instance & call session
+// this function require softphone instance & call session
 // socio => instance 
 // callSession => session call
-socio.hangup(callSession)
+softphone.hangup(callSession)
 </code>
       </pre>
               </div>
